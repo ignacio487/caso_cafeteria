@@ -3,6 +3,7 @@ package controlador;
 import modelo.Cafe;
 
 import java.util.ArrayList;
+import modelo.Cafeteria;
 
 public class CafeteriaControlador {
 
@@ -27,9 +28,9 @@ public class CafeteriaControlador {
 
 
 	public void descontinuarCafe() {
-		Cafe caféADescontinuar = obtenerCafe(nombre);
-		if (caféADescontinuar != null) {
-			cafeteria.getListaDeCafés().remove(caféADescontinuar);
+		Cafe cafeADescontinuar = obtenerCafe(nombre);
+		if (cafeADescontinuar != null) {
+			cafeteria.getListaDeCafés().remove(cafeADescontinuar);
 		}
 	}
 

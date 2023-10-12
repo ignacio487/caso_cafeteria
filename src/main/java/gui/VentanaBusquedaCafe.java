@@ -41,5 +41,6 @@ public class VentanaBusquedaCafe {
     }
 
     private void conectar() {
+
     }
 }
