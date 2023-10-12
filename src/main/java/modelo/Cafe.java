@@ -1,10 +1,21 @@
 package modelo;
 
 public class Cafe {
+
 	private int gramosDeCafe;
 	private int mililitrosDeAgua;
 	private String tamaño;
 	private String ingredientesOpcionales;
+
+	private String nombre;
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 
 	public int getGramosDeCafe() {
 		return this.gramosDeCafe;
