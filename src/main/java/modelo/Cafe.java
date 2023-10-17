@@ -50,6 +50,6 @@ public class Cafe {
 	}
 
 	public Cafe(int gramosDeCafe, int mililitrosDeAgua, String tamaño, String ingredientesOpcionales) {
-		throw new UnsupportedOperationException();
+		super();
 	}
 }
