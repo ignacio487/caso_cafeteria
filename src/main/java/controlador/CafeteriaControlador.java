@@ -1,13 +1,19 @@
 package controlador;
 
 import modelo.Cafe;
+import modelo.Cafeteria;
 
 import java.util.ArrayList;
-import modelo.Cafeteria;
 
 public class CafeteriaControlador {
 
-	public Cafe obtenerCafe() {
+	private Cafeteria cafeteria;
+
+	public CafeteriaControlador(Cafeteria cafeteria) {
+		this.cafeteria = cafeteria;
+	}
+
+	public Cafe obtenerCafe(String nombre) {
 		for (Cafe cafe : cafeteria.getListaDeCafes()) {
 			if (cafe.getNombre().equals(nombre)) {
 				return cafe;
@@ -16,9 +22,9 @@ public class CafeteriaControlador {
 		return null;
 	}
 
-	public ArrayList<Cafe> obtenerCafes(String tamaño) {
+	public ArrayList<Cafe> obtenerCafesPorTamaño(String tamaño) {
 		ArrayList<Cafe> cafésPorTamaño = new ArrayList<>();
-		for (Cafe cafe : cafeteria.getListaDeCafés()) {
+		for (Cafe cafe : cafeteria.getListaDeCafes()) {
 			if (cafe.getTamaño().equals(tamaño)) {
 				cafésPorTamaño.add(cafe);
 			}
@@ -26,17 +32,33 @@ public class CafeteriaControlador {
 		return cafésPorTamaño;
 	}
 
-
-	public void descontinuarCafe() {
+	public void descontinuarCafe(String nombre) {
 		Cafe cafeADescontinuar = obtenerCafe(nombre);
 		if (cafeADescontinuar != null) {
-			cafeteria.getListaDeCafés().remove(cafeADescontinuar);
+			cafeteria.getListaDeCafes().remove(cafeADescontinuar);
 		} else {
-			System.out.println("No existe el cafe");
+			System.out.println("No existe el café");
 		}
 	}
 
-	public void modificarInformacion() {
+	public void modificarInformacion(Cafe cafe, String nuevaInformacion) {
+		cafe.setNombre(nuevaInformacion);
+	}
 
+	public static void main(String[] args) {
+		Cafeteria cafeteria = new Cafeteria();
+		CafeteriaControlador controlador = new CafeteriaControlador(cafeteria);
+		Cafe cafeObtenido = controlador.obtenerCafe("Cafe1");
+
+		if (cafeObtenido != null) {
+			System.out.println("Café encontrado: " + cafeObtenido.getNombre());
+		} else {
+			System.out.println("Café no encontrado");
+		}
+
+		if (cafeObtenido != null) {
+			controlador.modificarInformacion(cafeObtenido, "Nueva información del café");
+			System.out.println("Información del café modificada.");
+		}
 	}
 }

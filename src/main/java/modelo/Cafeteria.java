@@ -11,6 +11,11 @@ public class Cafeteria {
 	private ArrayList<Cafe> listaDeCafes;
 	private Vector<Cafe> cafe = new Vector<Cafe>();
 
+	public Cafeteria() {
+		super();
+		this.listaDeCafes = new ArrayList<>();
+	}
+
 	public String getNombre() {
 		return this.nombre;
 	}
@@ -34,8 +39,7 @@ public class Cafeteria {
 	public void setRedSocial(String redSocial) {
 		this.redSocial = redSocial;
 	}
-
-	public Cafeteria(String nombre, String direccion, String redSocial) {
-		throw new UnsupportedOperationException();
+	public ArrayList<Cafe> getListaDeCafes() {
+		return this.listaDeCafes;
 	}
 }
