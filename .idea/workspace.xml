@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfbc03bd-25a8-47fe-bf09-067e801c2351" name="Changes" comment="caso cafeteria">
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaDescontinuarCafe.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaDescontinuarCafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaModificarInformacion.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaModificarInformacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaBusquedaCafe.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaBusquedaCafe.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaDescontinuarCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaDescontinuarCafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/VentanaModificarInformacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/VentanaModificarInformacion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698253890538</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="caso cafeteria">
+      <created>1698257046645</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1698257046645</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
