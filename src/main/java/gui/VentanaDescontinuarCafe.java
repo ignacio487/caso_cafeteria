@@ -9,21 +9,6 @@ public class VentanaDescontinuarCafe {
     private JPanel panel1;
     private JButton regresarButton;
 
-    public VentanaDescontinuarCafe() {
-        regresarButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        descontinuarCafeButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-    }
-
     public void mostrar() {
         JFrame frame = new JFrame("VentanaDescontinuarCafe");
         frame.setContentPane(new VentanaDescontinuarCafe().panel1);
@@ -34,5 +19,16 @@ public class VentanaDescontinuarCafe {
 
     public void setDescontinuarCafeButton(JButton descontinuarCafeButton) {
         this.descontinuarCafeButton = descontinuarCafeButton;
+    }
+
+    public void setRegresarButton(JButton regresarButton) {
+        this.regresarButton = regresarButton;
+    }
+    public void descontinuarCafe(){
+        JOptionPane.showMessageDialog(null, "Cafe descontinuado exitosamente");
+    }
+    public void regresar(){
+        VentanaBienvenida ventanaBienvenida = new VentanaBienvenida();
+        ventanaBienvenida.mostrar();
     }
 }
