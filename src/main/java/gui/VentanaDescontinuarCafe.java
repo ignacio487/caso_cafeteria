@@ -23,4 +23,16 @@ public class VentanaDescontinuarCafe {
             }
         });
     }
+
+    public void mostrar() {
+        JFrame frame = new JFrame("VentanaDescontinuarCafe");
+        frame.setContentPane(new VentanaDescontinuarCafe().panel1);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
+
+    public void setDescontinuarCafeButton(JButton descontinuarCafeButton) {
+        this.descontinuarCafeButton = descontinuarCafeButton;
+    }
 }

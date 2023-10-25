@@ -8,7 +8,7 @@ import modelo.Cafeteria;
 public class CafeteriaControlador {
 
 	public Cafe obtenerCafe() {
-		for (Cafe cafe : cafeteria.getListaDeCafés()) {
+		for (Cafe cafe : cafeteria.getListaDeCafes()) {
 			if (cafe.getNombre().equals(nombre)) {
 				return cafe;
 			}
@@ -31,6 +31,8 @@ public class CafeteriaControlador {
 		Cafe cafeADescontinuar = obtenerCafe(nombre);
 		if (cafeADescontinuar != null) {
 			cafeteria.getListaDeCafés().remove(cafeADescontinuar);
+		} else {
+			System.out.println("No existe el cafe");
 		}
 	}
 

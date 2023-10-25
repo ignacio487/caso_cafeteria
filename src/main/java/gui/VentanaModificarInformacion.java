@@ -43,4 +43,11 @@ public class VentanaModificarInformacion {
             }
         });
     }
+    public void ModificarNombreCafeteria(){
+        String nombre = JOptionPane.showInputDialog("Ingrese el nuevo nombre de la cafeteria");
+        JOptionPane.showMessageDialog(null, "Nombre de la cafeteria modificado exitosamente");
+    }
+
+
+
 }
