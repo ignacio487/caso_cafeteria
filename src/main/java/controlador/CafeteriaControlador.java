@@ -13,6 +13,12 @@ public class CafeteriaControlador {
 		this.cafeteria = cafeteria;
 	}
 
+	public Cafe agregarCafe(String nombre, String tamaño, String ingredientesOpcionales) {
+		Cafe cafe = new Cafe(nombre, tamaño, ingredientesOpcionales);
+		cafeteria.agregarCafe(cafe);
+		return cafe;
+	}
+
 	public Cafe obtenerCafe(String nombre) {
 		for (Cafe cafe : cafeteria.getListaDeCafes()) {
 			if (cafe.getNombre().equals(nombre)) {

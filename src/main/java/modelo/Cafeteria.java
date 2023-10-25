@@ -42,4 +42,8 @@ public class Cafeteria {
 	public ArrayList<Cafe> getListaDeCafes() {
 		return this.listaDeCafes;
 	}
+
+	public void agregarCafe(Cafe cafe) {
+		this.listaDeCafes.add(cafe);
+	}
 }

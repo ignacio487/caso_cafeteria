@@ -9,6 +9,10 @@ public class Cafe {
 
 	private String nombre;
 
+	public Cafe(String cafe1, String grande, String tamaño) {
+		super();
+	}
+
 	public String getNombre() {
 		return nombre;
 	}
