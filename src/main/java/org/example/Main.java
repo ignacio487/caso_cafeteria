@@ -27,8 +27,8 @@ public class Main {
         }
 
         if (cafeObtenido != null) {
-            controlador.modificarInformacion(cafeObtenido, "Nueva información del café");
-            System.out.println("Información del café modificada.");
+            controlador.modificarInformacion(cafeObtenido, "Nueva información de la cafeteria");
+            System.out.println("Información de la cafeteria modificada.");
         }
 
         ArrayList<Cafe> cafesGrandes = controlador.obtenerCafesPorTamaño("Grande");
